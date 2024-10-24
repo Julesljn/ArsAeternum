@@ -5,7 +5,6 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-
 }
 
 :root {
@@ -22,18 +21,18 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var(--secondaryColor);
     align-items: center;
+    border-bottom: 1px solid var(--secondaryColor);
 }
 
 .header__title {
     margin-left: 14px;
     font-family: "Bebas Neue", sans-serif;
     font-size: clamp(1.5rem, 3vw, 3rem);
+}
 
-    a {
-        color: black;
-    }
+.header__title a {
+    color: black;
 }
 
 .header__nav {
@@ -54,8 +53,8 @@ body {
 .nav__list--item {
     display: flex;
     align-items: flex-end;
-    border-left: 1px solid var(--secondaryColor);
     padding: 14px 15px;
+    border-left: 1px solid var(--secondaryColor);
 }
 
 .list__item--basket {
@@ -64,43 +63,43 @@ body {
     align-items: center;
     color: var(--secondaryColor);
     padding-bottom: 4px;
+}
 
-    #basket-number {
-        height: 0px;
-    }
+.list__item--basket #basket-number {
+    height: 0;
 }
 
 .mainIndex {
-    padding: 6vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 6vh 0;
 }
 
 .main__title {
     width: 50%;
+    padding: 14px;
     font-family: "Bebas Neue", sans-serif;
     font-size: clamp(2.5rem, 5vw, 4.5rem);
-    padding: 14px;
 }
 
 .main__separator {
-    margin: 10vh 0;
-    text-align: center;
-    padding: 8px;
-    border-top: 1px solid var(--secondaryColor);
-    border-bottom: 1px solid var(--secondaryColor);
     width: 100%;
+    margin: 10vh 0;
+    padding: 8px;
+    text-align: center;
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
+    border-top: 1px solid var(--secondaryColor);
+    border-bottom: 1px solid var(--secondaryColor);
 }
 
 .separator__text {
+    display: inline-block;
     font-family: "Bebas Neue", sans-serif;
     font-size: clamp(1.2rem, 2vw, 1.6rem);
-    display: inline-block;
     animation: scrolling 15s linear infinite;
 }
 
@@ -108,7 +107,6 @@ body {
     0% {
         transform: translateX(100%);
     }
-
     100% {
         transform: translateX(-100%);
     }
@@ -126,41 +124,50 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 5vh;
+}
 
-    li {
-        padding: 0 20px;
-    }
+.product__list li {
+    padding: 0 20px;
 }
 
 .product__list--item {
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--secondaryColor);
     padding: 20px;
     margin-bottom: 3vh;
+    border: 1px solid var(--secondaryColor);
+}
 
-    img {
-        width: 400px;
-        height: 500px;
-    }
+.product__list--item img,
+.product__details img {
+    width: 400px;
+    height: 500px;
+}
 
-    p {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: clamp(1rem, 1.5vw, 1.3rem);
-        margin: 10px 0 5px 0;
-    }
+.product__list--item p,
+.product__details h2 {
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 3px;
+}
 
-    a {
-        margin: 10px 0 0 0;
-        padding: 10px;
-        width: 50%;
-        background-color: transparent;
-        font-family: "Bebas Neue", sans-serif;
-        border: 1px solid var(--secondaryColor);
-        font-size: clamp(1rem, 1.5vw, 1.3rem);
-        color: var(--secondaryColor);
-        text-align: center;
-    }
+.product__list--item p {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    margin: 10px 0 5px;
+}
+
+.product__list--item a,
+.product__details button,
+.form button {
+    margin: 10px 0 0;
+    padding: 10px;
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid var(--secondaryColor);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    color: var(--secondaryColor);
+    text-align: center;
+    cursor: pointer;
 }
 
 .viewsProduct__img {
@@ -169,43 +176,18 @@ body {
 }
 
 .product__details {
-    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid var(--secondaryColor);
     padding: 20px;
+    margin: 10px;
     gap: 6px;
+    border: 1px solid var(--secondaryColor);
+}
 
-    img {
-        width: 400px;
-        height: 500px;
-    }
-
-    h2 {
-        font-family: "Bebas Neue", sans-serif;
-        margin-top: 3px;
-        font-size: clamp(1rem, 1.5vw, 1.7rem);
-    }
-
-    p {
-        margin: 5px 0;
-        font-size: clamp(0.7rem, 1.5vw, 1.3rem);
-    }
-
-    button {
-        margin-top: 5px;
-        margin: 10px 0 0 0;
-        padding: 10px;
-        width: 50%;
-        background-color: transparent;
-        font-family: "Bebas Neue", sans-serif;
-        border: 1px solid var(--secondaryColor);
-        font-size: clamp(1rem, 1.5vw, 1.3rem);
-        color: var(--secondaryColor);
-        text-align: center;
-        cursor: pointer;
-    }
+.product__details p {
+    margin: 5px 0;
+    font-size: clamp(0.7rem, 1.5vw, 1.3rem);
 }
 
 .mainIndex__title {
@@ -225,48 +207,37 @@ body {
 }
 
 .form {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-
-    input {
-        border: 1px solid var(--secondaryColor);
-        padding: 5px;
-        background-color: transparent;
-        width: 20vw;
-        height: 3vh;
-    }
-
-    input:focus {
-        outline: none;
-    }
-
-    button {
-        margin-top: 5px;
-        margin: 10px 0 0 0;
-        padding: 10px;
-        width: 50%;
-        background-color: transparent;
-        font-family: "Bebas Neue", sans-serif;
-        border: 1px solid var(--secondaryColor);
-        font-size: clamp(1rem, 1.5vw, 1.3rem);
-        color: var(--secondaryColor);
-        text-align: center;
-        cursor: pointer;
-    }
+    margin-top: 30px;
 }
+
+.form input {
+    width: 20vw;
+    height: 3vh;
+    padding: 5px;
+    border: 1px solid var(--secondaryColor);
+    background-color: transparent;
+}
+
+.form input:focus {
+    outline: none;
+}
+
 .confirmation__list {
-    margin: 40px;
     display: flex;
     flex-direction: column;
+    margin: 40px;
     font-family: "Bebas Neue", sans-serif;
     font-size: clamp(1rem, 1.5vw, 1.3rem);
-    li {
-        border-bottom: 1px solid var(--secondaryColor);
-        padding: 20px 0;
-    }
 }
+
+.confirmation__list li {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--secondaryColor);
+}
+
 .user-info {
     display: flex;
     flex-direction: column;
@@ -280,27 +251,18 @@ body {
 }
 
 @media (max-width: 535px) {
-    .product__list--item {
-        img {
-            width: 200px;
-            height: 300px;
-        }
+    .product__list--item img,
+    .product__details img {
+        width: 200px;
+        height: 300px;
     }
 
     .product__details {
         margin: 0;
         border: none;
-
-        img {
-            width: 200px;
-            height: 300px;
-        }
     }
 
-    .form {
-        input {
-            width: 50vw;
-        }
+    .form input {
+        width: 50vw;
     }
-
 }

@@ -1,10 +1,9 @@
-// Met à jour le compteur du panier dans le header
+// Updates the cart count in the header
 function updateCartCount() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    let cartCount = cart.length;
     let cartCountElement = document.getElementById('basket-number');
     if (cartCountElement) {
-        cartCountElement.textContent = cartCount;
+        cartCountElement.textContent = cart.length;
     }
 }
 
@@ -16,7 +15,7 @@ const productId = params.get('id');
 fetch(`http://localhost:3000/products/${productId}`)
     .then(response => {
         if (!response.ok) {
-            throw new Error(`Erreur HTTP ! Statut : ${response.status}`);
+            throw new Error(response.status);
         }
         return response.json();
     })
@@ -42,11 +41,11 @@ fetch(`http://localhost:3000/products/${productId}`)
         addBasket.addEventListener('click', function (event) {
             event.preventDefault();
 
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cart = JSON.parse(localStorage.getItem('cart')) || []; // Retrieve the cart from localStorage
 
             cart.push(product);
 
-            localStorage.setItem('cart', JSON.stringify(cart));
+            localStorage.setItem('cart', JSON.stringify(cart)); // Update the cart in localStorage
             updateCartCount();
             window.location.assign('../index.html');
         });
@@ -55,6 +54,6 @@ fetch(`http://localhost:3000/products/${productId}`)
         productArticle.appendChild(title);
         productArticle.appendChild(description);
         productArticle.appendChild(price);
-        productArticle.appendChild(addBasket);
+        productArticle.appendChild(addBasket); // Add product elements to the page
     })
     .catch(error => console.error(error));

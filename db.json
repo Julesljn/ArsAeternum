@@ -44,23 +44,23 @@
         },
         {
             "id": "7",
-            "name": "Les Demoiselles d'Avignon",
-            "description": "Oil painting, 243.9 cm x 233.7 cm, Pablo Picasso, 1907",
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Les_Demoiselles_d%27Avignon.jpg/512px-Les_Demoiselles_d%27Avignon.jpg",
-            "price": 46000
+            "name": "The Arnolfini Portrait",
+            "description": "Oil painting, 82.2 cm x 60 cm, Jan van Eyck, 1434",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Jan_van_Eyck_-_Portrait_of_Giovanni_Arnolfini_and_his_Wife_-_WGA7689.jpg",
+            "price": 37000
         },
         {
             "id": "8",
             "name": "The Birth of Venus",
             "description": "Tempera painting, 172.5 cm x 278.5 cm, Sandro Botticelli, 1485-1486",
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/512px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Sandro_Botticelli_046.jpg",
             "price": 42000
         },
         {
             "id": "9",
             "name": "The Garden of Earthly Delights",
             "description": "Oil painting, triptych, 220 cm x 389 cm, Hieronymus Bosch, 1494-1505",
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/El_jard%C3%ADn_de_las_Delicias%2C_de_El_Bosco.jpg/512px-El_jard%C3%ADn_de_las_Delicias%2C_de_El_Bosco.jpg",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Garden_delights.jpg",
             "price": 39500
         },
         {
@@ -74,15 +74,43 @@
             "id": "11",
             "name": "The Night Watch",
             "description": "Oil painting, 363 cm x 437 cm, Rembrandt, 1642",
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Rembrandt_Harmensz._van_Rijn_-_De_Nachtwacht_-_Google_Art_Project.jpg/512px-Rembrandt_Harmensz._van_Rijn_-_De_Nachtwacht_-_Google_Art_Project.jpg",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Netherlands-4164_-_Main_Characters_in_the_Night_Watch_%2811715223944%29.jpg",
             "price": 50000
         },
         {
             "id": "12",
             "name": "American Gothic",
             "description": "Oil painting, 78 cm x 65.3 cm, Grant Wood, 1930",
-            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg/512px-Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/71/Grant_DeVolson_Wood_-_American_Gothic.jpg",
             "price": 41000
+        },
+        {
+            "id": "13",
+            "name": "Las Meninas",
+            "description": "Oil painting, 318 cm x 276 cm, Diego Velázquez, 1656",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Las_Meninas_01.jpg",
+            "price": 47000
+        },
+        {
+            "id": "14",
+            "name": "The Persistence of Memory",
+            "description": "Oil painting, 24 cm x 33 cm, Salvador Dalí, 1931",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg",
+            "price": 39000
+        },
+        {
+            "id": "15",
+            "name": "The Raft of the Medusa",
+            "description": "Oil painting, 491 cm x 716 cm, Théodore Géricault, 1818-1819",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/99/Th%C3%A9odore_G%C3%A9ricault_-_The_Raft_of_the_Medusa_-_WGA08630.jpg",
+            "price": 44000
+        },
+        {
+            "id": "16",
+            "name": "The Hay Wain",
+            "description": "Oil painting, 130.2 cm x 185.4 cm, John Constable, 1821",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/John_Constable_The_Hay_Wain.jpg",
+            "price": 36000
         }
     ]
 }

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         cart.forEach(product => {
-            totalPrice += product.price;
+            totalPrice += product.price; // Calculate total price
 
             const productArticle = document.createElement('article');
             productArticle.classList.add('product__details');
@@ -34,13 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
             productArticle.innerHTML = `
                 <img src="${product.imageUrl}" alt="${product.name}">
                 <h2>${product.name}</h2>
-                <p>${product.description}</p>
                 <span>${product.price} $</span>
                 <button class="remove-btn">Delete</button>
             `;
 
             productArticle.querySelector('.remove-btn').addEventListener('click', () => {
-                removeFromCart(product.id);
+                removeFromCart(product.id); // Remove product from cart
             });
 
             productList.appendChild(productArticle);
@@ -50,9 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const removeFromCart = (productId) => {
-        cart = cart.filter(item => item.id !== productId);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        renderCart();
+        cart = cart.filter(item => item.id !== productId); // Remove item from cart
+        localStorage.setItem('cart', JSON.stringify(cart)); // Update cart in localStorage
+        renderCart(); // Re-render the cart
     };
 
     renderCart();
@@ -67,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const addressInputElement = document.querySelector('.input-address');
 
             if (!nameInputElement || !emailInputElement || !addressInputElement) {
-                console.error('Un des éléments du formulaire est introuvable.');
+                console.error('One of the form elements is missing.');
                 return;
             }
 
@@ -78,10 +77,10 @@ document.addEventListener('DOMContentLoaded', () => {
             let valid = true;
             const messages = [];
 
-            const sanitizeInput = (input) => input.replace(/[^a-zA-Z0-9\s]/g, '');
+            const clearInput = (input) => input.replace(/[^a-zA-Z0-9\s]/g, ''); // Clear input
 
-            const name = sanitizeInput(nameInput);
-            const address = sanitizeInput(addressInput);
+            const name = clearInput(nameInput);
+            const address = clearInput(addressInput);
 
             if (name === '') {
                 valid = false;
@@ -105,14 +104,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     email: emailInput,
                     address: address
                 };
-                localStorage.setItem('userInfo', JSON.stringify(userInfo));
-
+                localStorage.setItem('userInfo', JSON.stringify(userInfo)); // Save user info
                 window.location.href = 'confirmation.html';
-            } else {
-                alert(messages.join('\n'));
             }
         });
     } else {
-        console.error('Le formulaire est introuvable.');
+        console.error('Form not found.');
     }
 });

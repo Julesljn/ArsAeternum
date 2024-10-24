@@ -3,15 +3,12 @@ const productList = document.querySelector('.product__list');
 
 function updateCartCount() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    let cartCount = cart.length;
     let cartCountElement = document.getElementById('basket-number');
-    if (cartCountElement) {
-        cartCountElement.textContent = cartCount;
-    }
+    if (cartCountElement) cartCountElement.textContent = cart.length; // Update cart count
 }
 
 fetch(jsonFile)
-    .then(response => response.json())
+    .then(response => response.json()) // Fetch product data
     .then(products => {
         products.forEach(product => {
             const li = document.createElement('li');
@@ -38,9 +35,9 @@ fetch(jsonFile)
             article.appendChild(viewLink);
 
             li.appendChild(article);
-            productList.appendChild(li);
+            productList.appendChild(li); // Add product to the list
         });
     })
     .catch(error => {
-        console.error(error);
+        console.error(error); // Handle errors
     });

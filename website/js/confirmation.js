@@ -24,8 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 confirmationList.appendChild(listItem);
             });
         }
-    } else {
-        console.error('La liste de confirmation est introuvable.');
     }
 
     localStorage.removeItem('cart');

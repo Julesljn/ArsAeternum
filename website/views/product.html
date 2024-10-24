@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArsAeternum</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title"><a href="../index.html">ArsAeternum</a></h1>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__list--item">
+                    <a href="" aria-label="Search">
+                        <img class="nav__icon" src="../images/magnifying-glassIcon.svg"
+                            alt="Magnifying glass icon for search">
+                    </a>
+                </li>
+                <li class="nav__list--item">
+                    <a class="list__item--basket" href="./basket.html" aria-label="Shopping Cart">
+                        <img class="nav__icon" src="../images/basketIcon.svg" alt="Shopping cart icon for purchases">
+                        <span id="basket-number"></span>
+                    </a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="" aria-label="Menu">
+                        <img class="nav__icon" src="../images/menuIcon.svg" alt="Menu icon for navigation">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainIndex">
+        <article class="product__details">
+        </article>
+    </main>
+    <script src="../js/product.js">
+        updateCartCount();
+    </script>
+</body>
+
+</html>

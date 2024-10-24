@@ -1,0 +1,88 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "The Starry Night",
+            "description": "Oil painting, 73.7 cm x 92.1 cm, Vincent van Gogh, 1889",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/VanGogh-starry_night_ballance1.jpg",
+            "price": 45000
+        },
+        {
+            "id": "2",
+            "name": "Mona Lisa",
+            "description": "Oil painting, 77 cm x 53 cm, Leonardo da Vinci, 1503-1506",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/512px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+            "price": 50000
+        },
+        {
+            "id": "3",
+            "name": "Water Lilies",
+            "description": "Oil painting, Claude Monet, 1916-1919",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Claude_Monet%2C_Water_Lilies_%28detail%29%2C_1914-17_%281970701507%29.jpg",
+            "price": 38000
+        },
+        {
+            "id": "4",
+            "name": "The Scream",
+            "description": "Oil painting, 91 cm x 73.5 cm, Edvard Munch, 1893",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/The_Scream.jpg/512px-The_Scream.jpg",
+            "price": 47000
+        },
+        {
+            "id": "5",
+            "name": "The Kiss",
+            "description": "Oil and gold leaf painting, 180 cm x 180 cm, Gustav Klimt, 1907-1908",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/The_Kiss_Googly_Eyes.jpg",
+            "price": 32000
+        },
+        {
+            "id": "6",
+            "name": "Guernica",
+            "description": "Oil painting, 349 cm x 776 cm, Pablo Picasso, 1937",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/PicassoGuernica.jpg/512px-PicassoGuernica.jpg",
+            "price": 48000
+        },
+        {
+            "id": "7",
+            "name": "Les Demoiselles d'Avignon",
+            "description": "Oil painting, 243.9 cm x 233.7 cm, Pablo Picasso, 1907",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Les_Demoiselles_d%27Avignon.jpg/512px-Les_Demoiselles_d%27Avignon.jpg",
+            "price": 46000
+        },
+        {
+            "id": "8",
+            "name": "The Birth of Venus",
+            "description": "Tempera painting, 172.5 cm x 278.5 cm, Sandro Botticelli, 1485-1486",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/512px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+            "price": 42000
+        },
+        {
+            "id": "9",
+            "name": "The Garden of Earthly Delights",
+            "description": "Oil painting, triptych, 220 cm x 389 cm, Hieronymus Bosch, 1494-1505",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/El_jard%C3%ADn_de_las_Delicias%2C_de_El_Bosco.jpg/512px-El_jard%C3%ADn_de_las_Delicias%2C_de_El_Bosco.jpg",
+            "price": 39500
+        },
+        {
+            "id": "10",
+            "name": "Girl with a Pearl Earring",
+            "description": "Oil painting, 44.5 cm x 39 cm, Johannes Vermeer, 1665",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Meisje_met_de_parel.jpg/512px-Meisje_met_de_parel.jpg",
+            "price": 43000
+        },
+        {
+            "id": "11",
+            "name": "The Night Watch",
+            "description": "Oil painting, 363 cm x 437 cm, Rembrandt, 1642",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Rembrandt_Harmensz._van_Rijn_-_De_Nachtwacht_-_Google_Art_Project.jpg/512px-Rembrandt_Harmensz._van_Rijn_-_De_Nachtwacht_-_Google_Art_Project.jpg",
+            "price": 50000
+        },
+        {
+            "id": "12",
+            "name": "American Gothic",
+            "description": "Oil painting, 78 cm x 65.3 cm, Grant Wood, 1930",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg/512px-Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg",
+            "price": 41000
+        }
+    ]
+}
